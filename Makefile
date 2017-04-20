@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nterol <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: nterol <nterol@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/22 14:31:35 by nterol            #+#    #+#              #
-#    Updated: 2017/04/15 16:12:53 by nterol           ###   ########.fr        #
+#    Updated: 2017/04/20 17:25:42 by nterol           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME = fractol
 
 CFLAGS = -Wall -Werror -Wextra -Ofast
 
-SRC = main.c fractal.c hooks.c launcher.c draw.c
+SRC = main.c fractal.c key_hooks.c mouse_hooks.c launcher.c draw.c
 
-OBJ = main.o fractal.o hooks.o launcher.o draw.o
+OBJ = main.o fractal.o key_hooks.o mouse_hooks.o launcher.o draw.o
 
 LIB = ./libft/libft.a
 

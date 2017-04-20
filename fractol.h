@@ -6,7 +6,7 @@
 /*   By: nterol <nterol@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:19:53 by nterol            #+#    #+#             */
-/*   Updated: 2017/04/19 18:50:33 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/20 20:31:22 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,20 @@
 
 # define M_UP 5
 # define M_DOWN 4
-# define M_LEFT 7
+# define F_TOUCH 3
+# define G_TOUCH 5
 # define M_RIGHT 6
+# define M_LEFT 7
+# define V_TOUCH 9
+# define B_TOUCH 11
+# define E_TOUCH 14
+# define R_TOUCH 15
 # define PAUSE 49
 # define ESC 53
 # define PLUS 69
 # define MINUS 78
+# define LEFT 123
+# define RIGHT 124
 # define UP 126
 # define DOWN 125
 # define WIDTH 800
@@ -39,6 +47,12 @@ typedef struct  s_key {
   int           plus;
   int           minus;
   int           pause;
+  int           red;
+  int           der;
+  int           green;
+  int           neerg;
+  int           blue;
+  int           eulb;
 }               t_key;
 
 typedef struct  s_color {
@@ -66,10 +80,6 @@ typedef struct s_ctol {
   double        moveX;
   double        moveY;
   double        zoom;
-  t_color       pal1;
-  t_color       pal2
-  t_color       begin;
-  t_color       end;
   int           max_i;
   int           i;
   double        cR;
@@ -84,10 +94,16 @@ typedef struct s_ctol {
   int           h;
   double        W;
   double        H;
-  double        mu;
+  int           gear;
+  double        a;
+  double        b;
+  double        c;
+
   t_fra         env;
   t_key         love;
-
+  t_color       begin;
+  t_color       end;
+  t_color       pablo[5];
 }               t_ctol;
 
 // main.c functions :
@@ -109,16 +125,18 @@ void            mandelbrot(int x, int y, t_ctol *uni);
 void            burningship(int x, int y, t_ctol *);
 int             clear_window(t_ctol *uni);
 
-// hooks.c functions :
+// mouse_hooks.c functions :
 int             mouse_hook(int keycode, int x, int y, t_ctol *uni);
 int             motion_notify(int x, int y, t_ctol *uni);
+
+// key_hooks.c functions
 int             key_press(int keycode, t_ctol *uni);
 int             key_release(int keycode, t_ctol *uni);
 int             loop_hook(t_ctol *uni);
-//int             button_press(int button, int x, int y, t_ctol *uni);
 
 // draw.c functions :
 void          pixel_put(int x, int y, t_ctol   *uni, t_color color);
 void          palette(int x, int y, t_ctol *uni);
+void          pick_a_color(t_ctol *uni);
 
 #endif
