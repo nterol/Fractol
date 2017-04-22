@@ -6,7 +6,7 @@
 /*   By: nterol <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/09 10:16:48 by nterol            #+#    #+#             */
-/*   Updated: 2017/02/20 21:25:48 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/21 17:04:28 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,6 @@ int					ft_isupper(int c);
 int					ft_islower(int c);
 int					ft_iterative_factorial(int nb);
 int					get_next_line(const int fd, char **line);
-double			ft_count(char **ptr);
+double				ft_count(char **ptr);
 
 #endif
