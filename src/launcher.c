@@ -6,7 +6,7 @@
 /*   By: nterol <nterol@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:20:21 by nterol            #+#    #+#             */
-/*   Updated: 2017/04/26 16:32:24 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/26 18:05:19 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	set_launcher(t_ctol *uni)
 void	hooks(t_ctol *uni)
 {
 	mlx_mouse_hook(uni->env.window, mouse_hook, uni);
-	if (uni->env.set == 1)
+	if (uni->env.set == 0)
 		mlx_hook(uni->env.window, 6, 0, motion_notify, uni);
 	mlx_hook(uni->env.window, 2, 0, key_press, uni);
 	mlx_hook(uni->env.window, 3, 0, key_release, uni);
