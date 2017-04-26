@@ -6,7 +6,7 @@
 /*   By: nterol <nterol@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:20:48 by nterol            #+#    #+#             */
-/*   Updated: 2017/04/26 14:48:48 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/26 16:30:57 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		loop_hook(t_ctol *uni)
 	if (uni->love.next || uni->love.previous)
 	{
 		uni->env.set += abs((1 * uni->love.next) - (1 * uni->love.previous));
-		uni->env.set = uni->env.set % 4;
+		uni->env.set = uni->env.set % 3;
 		uni->love.next = 0;
 		uni->love.previous = 0;
 	}

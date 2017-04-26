@@ -6,7 +6,7 @@
 /*   By: nterol <nterol@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:19:46 by nterol            #+#    #+#             */
-/*   Updated: 2017/04/26 16:09:01 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/26 16:31:54 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ void		check_set(int ac, char **av, t_ctol *uni)
 	if (ft_strcmp(av[1], "julia") && ft_strcmp(av[1], "mandelbrot") &&\
 			ft_strcmp(av[1], "burningship"))
 		display();
-	!ft_strcmp(av[1], "julia") ? uni->env.set = 1 : 0;
-	!ft_strcmp(av[1], "mandelbrot") ? uni->env.set = 2 : 0;
-	!ft_strcmp(av[1], "burningship") ? uni->env.set = 3 : 0;
+	!ft_strcmp(av[1], "julia") ? uni->env.set = 0 : 0;
+	!ft_strcmp(av[1], "mandelbrot") ? uni->env.set = 1 : 0;
+	!ft_strcmp(av[1], "burningship") ? uni->env.set = 2 : 0;
 }
 
 int			main(int ac, char **av)

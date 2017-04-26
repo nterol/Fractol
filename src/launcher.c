@@ -6,7 +6,7 @@
 /*   By: nterol <nterol@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 15:20:21 by nterol            #+#    #+#             */
-/*   Updated: 2017/04/26 14:50:13 by nterol           ###   ########.fr       */
+/*   Updated: 2017/04/26 16:32:24 by nterol           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ void	set_launcher(t_ctol *uni)
 		x = -1;
 		while (++x < uni->h)
 		{
-			uni->env.set == 1 ? julia(x, y, uni) : 0;
-			uni->env.set == 2 ? mandelbrot(x, y, uni) : 0;
-			uni->env.set == 3 ? burningship(x, y, uni) : 0;
+			uni->env.set == 0 ? julia(x, y, uni) : 0;
+			uni->env.set == 1 ? mandelbrot(x, y, uni) : 0;
+			uni->env.set == 2 ? burningship(x, y, uni) : 0;
 		}
 		y++;
 	}
