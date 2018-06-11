@@ -36,7 +36,9 @@ int		key_press(int keycode, t_ctol *uni)
 {
 	keycode == ESC ? exit(42) : 0;
 	keycode == PLUS ? uni->love.plus = 1 : 0;
-	keycode == MINUS ? uni->love.minus = 1 : 0;
+	keycode == MINUS  ? uni->love.minus = 1 : 0;
+	keycode == ALT_PLUS ? uni->love.plus = 1 : 0;
+	keycode == ALT_MINUS ? uni->love.minus = 1 : 0;
 	keycode == UP ? uni->love.up = 1 : 0;
 	keycode == DOWN ? uni->love.down = 1 : 0;
 	if (keycode == PAUSE)
@@ -58,5 +60,7 @@ int		key_release(int keycode, t_ctol *uni)
 	keycode == MINUS ? uni->love.minus = 0 : 0;
 	keycode == UP ? uni->love.up = 0 : 0;
 	keycode == DOWN ? uni->love.down = 0 : 0;
+	keycode == ALT_PLUS ? uni->love.plus = 0 : 0;
+	keycode == ALT_MINUS ? uni->love.minus = 0 : 0;
 	return (0);
 }
