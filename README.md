@@ -8,7 +8,12 @@ Then launch `make`
 When the compiling is done, launch 
 `./fractol set_type` 
 where `set_type`is either :
-`julia`, `mandelbrot`, or `burningship`
+`julia`,
+![Julia](https://github.com/nterol/Fractol/blob/master/img/julia.png)
+`mandelbrot`,
+![Mandelbrot](https://github.com/nterol/Fractol/blob/master/img/mandelbrot.png)
+or `burningship`
+![Burningship](https://github.com/nterol/Fractol/blob/master/img/burningship.png)
 
 #### Controls
 
@@ -16,13 +21,13 @@ You can zoom in using your the roll of your mouse, your trackpad, or with the **
 Note that the zoom will always follow to position of the mouse cursor. 
 **LEFT** and **RIGHT** arrows will enabled you to swithc between the three sets. 
 **O** and **P** will change the color of the set : 
-[usual palette](/img/normal_color_set.jpg)
+![usual palette](https://github.com/nterol/Fractol/blob/master/img/Julia.png)
 * **O** will calculate the cosinus color gradient from the initial palette
-[cosinus](/img/O_color_set)
+![cosinus](https://github.com/nterol/Fractol/blob/master/img/O_color_set.png)
 * **P** will calculate the sinus color gradient from the initial palette
-[sinus](/img/P_color_set)
+![sinus](https://github.com/nterol/Fractol/blob/master/img/P_color_set.png)
 * **O**+**P** will switch the set to a secondary palette.
-[secondary palette](/img/O+P_color_set)
+![secondary palette](https://github.com/nterol/Fractol/blob/master/img/O+P_color_set.png)
 
 **+** will increase the number of iterations
 **-** will decrease the number of iterations
