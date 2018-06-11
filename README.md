@@ -1,12 +1,12 @@
 # Fractol
-Fractal generator of the 42 school's graphic branch
+Fractal generator of the 42 school's graphic branch written in C.  
 Basic Projects, very fun to do. 
 
 #### Set Up 
-Clone the repo. 
-Then launch `make`
-When the compiling is done, launch 
-`./fractol set_type` 
+Clone the repo.  
+Then launch `make` . 
+When the compiling is done, launch .  
+`./fractol set_type` .  
 where `set_type`is either :
 `julia`,
 
@@ -41,11 +41,11 @@ Note that the zoom will always follow to position of the mouse cursor.
 
 <img alt="secondary palette" src="https://github.com/nterol/Fractol/blob/master/img/O+P_color_set.png" width="400" height="377"/>
 
-**+** will increase the number of iterations
-**-** will decrease the number of iterations
+**+** will increase the number of iterations.  
+**-** will decrease the number of iterations.
 
-I did not take the time to optimize everything on this Fractol since it was just a mandatory -though funny- project. 
-I just wanted to have the same color as the Julia on the wikipedia page "Fractal"
-Fractol will not crash if you increase the number of iterations like crazy. But it will get very slow.
+I did not take the time to optimize everything on this Fractol since it was just a mandatory -though funny- project.   
+I just wanted to have the same color as the Julia on the wikipedia page "Fractal" . 
+Fractol will not crash if you increase the number of iterations like crazy. But it will get very slow.  
 
 **ESC** whill shut the program and close the window.  
