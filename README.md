@@ -16,9 +16,13 @@ You can zoom in using your the roll of your mouse, your trackpad, or with the **
 Note that the zoom will always follow to position of the mouse cursor. 
 **LEFT** and **RIGHT** arrows will enabled you to swithc between the three sets. 
 **O** and **P** will change the color of the set : 
+[usual palette](/img/normal_color_set.jpg)
 * **O** will calculate the cosinus color gradient from the initial palette
+[cosinus](/img/O_color_set)
 * **P** will calculate the sinus color gradient from the initial palette
+[sinus](/img/P_color_set)
 * **O**+**P** will switch the set to a secondary palette.
+[secondary palette](/img/O+P_color_set)
 
 **+** will increase the number of iterations
 **-** will decrease the number of iterations
